@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeshClimate - Bangladesh Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather-app">
+        <h1>DeshClimate</h1>
+        <p>Your weather companion for cities in Bangladesh </p>
+        
+        <!-- Input field for city name -->
+        <input type="text" id="cityInput" placeholder="Enter a Bangladeshi city name (e.g., Dhaka)">
+        <button onclick="getWeather()">Check Weather</button>
+        
+        <!-- Weather result display area, hidden by default -->
+        <div id="weatherResult" class="hidden">
+            <div class="weather-card">
+                <h2 id="cityName"></h2>
+                <img id="weatherIcon" alt="Weather Icon">
+                <p id="temperature"></p>
+                <p id="description"></p>
+                <p id="humidity"></p>
+                <p id="windSpeed"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
